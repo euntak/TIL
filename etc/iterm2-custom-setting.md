@@ -1,5 +1,5 @@
 
-# ITERM2 세팅셋팅 
+# ITERM2 SETTING
 
 ### WHY ITERM2 ?
 
