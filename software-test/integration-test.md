@@ -27,15 +27,6 @@
 
 이런 다양한 이유로 유닛 테스트들의 결함이 존재 할 수 있기 때문에 통합테스트가 필요하다.
 
-### 하향식(Top-down) 
-통합 테스트 방식에서는 최상위 모듈을 먼저 테스트하고 통합해야 합니다. 이 방식에서는 최상위 논리 및 데이터 흐름을 프로세스 초기에서 테스트하므로 드라이버를 사용할 필요가 거의 없습니다. 하지만 스텁을 사용해야 하므로 개발 주기에서 테스트 관리가 복잡해지고 저수준 유틸리티가 상대적으로 늦게 테스트됩니다. 하향식 통합 테스트 방식의 다른 단점은 기능이 제한된 초기 릴리스를 제대로 지원하지 않는다는 점입니다.
-
-### 상향식(Bottom-up) 
-테스트 방식에서는 저수준 유닛을 먼저 테스트하고 통합해야 합니다. 이들 유닛은 흔히 유틸리티 모듈이라고 합니다. 이 방식에서는 유틸리티 모듈을 프로세스 초기에서 테스트하므로 스텁을 사용할 필요가 거의 없습니다. 하지만 이 방식에서는 드라이버를 사용해야 하므로 개발 주기에서 테스트 관리가 복잡해지고 상위 논리 및 데이터 흐름이 상대적으로 늦게 테스트됩니다 하향식 테스트 방식과 마찬가지로 상향식 테스트 방식에서도 기능이 제한된 초기 릴리스를 제대로 지원하지 않습니다.
-
-### 우산(Umbrella) 
-방식이라고 불리는 세 번째 방식에서는 기능적 데이터와 제어 흐름 경로가 필요합니다. 우선, 위에서 설명된 상향 방식을 사용하여 기능의 입력이 통합됩니다. 그런 다음 각 기능의 출력이 하향 방식으로 통합됩니다. 이 방식의 가장 큰 장점은 기능이 제한된 초기 릴리스를 어느 정도 지원한다는 점입니다. 또한 이 방식에서는 드라이버와 스텁을 사용할 필요가 거의 없습니다. 하지만 이 방식의 한 가지 심각한 단점은 다른 두 방식에 비해 덜 체계적이므로 역행 검사(Regression Testing)를 사용해야 한다는 점입니다.
-
 
 ### 간단한 예
 
@@ -52,3 +43,5 @@
 * [https://sites.google.com/site/knowingmoresoftware/software-testing/integration-testing](https://sites.google.com/site/knowingmoresoftware/software-testing/integration-testing)
 
 * Stub, driver에 대한 정리 [http://www.sten.or.kr/bbs/board.php?bo_table=test_story&wr_id=3717](http://www.sten.or.kr/bbs/board.php?bo_table=test_story&wr_id=3717)
+
+* [https://justhackem.wordpress.com/2016/05/23/unit-integration-acceptance-and-functional-testing/](https://justhackem.wordpress.com/2016/05/23/unit-integration-acceptance-and-functional-testing/)
