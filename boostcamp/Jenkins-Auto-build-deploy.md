@@ -1,22 +1,20 @@
 # Jenkins를 이용한 빌드 자동화 및 배포
 
 
-
-
 ## 1.Root 계정으로 해야 할 일들
 
-### 1-1. [Root 계정으로 일반 계정 생성](#createuser)
+### 1-1. Root 계정으로 일반 계정 생성
 
 ```bash
-$> adduser 아이디
+adduser 아이디
 ```
 
 ### 1-2. 일반 계정이 접근할 수 있는 디렉토리 생성 및 권한 주기
 
 ```bash
-$root> mkdir /apps
-$root> chown 아이디.아이디 /apps
-$root> ls -la
+mkdir /apps
+chown 아이디.아이디 /apps
+ls -la
 ```
 
 ## 2. 일반 계정으로 해야 할 일들
@@ -27,6 +25,7 @@ $root> ls -la
 윈도우 & 맥의 경우 `ftp`를 이용하여 업로드 한다. windows 사용자는 [FileZillar](https://filezilla-project.org/)를 사용한다.
 
 > `~/`는 홈 디렉토리를 말한다. `/home/아이디`와 같은 디렉토리이다.
+>
 > 여기서 우리는 JDK, MAVEN, TOMCAT을 `/apps`라는 폴더를 만들어서 관리 한다. 
 
 #### JDK 설치
@@ -34,18 +33,18 @@ $root> ls -la
 위의 JDK 링크에서 JDK 압축파일을 받은 후, 서버에 업로드해서 `/apps` 디렉토리로 옮긴다.
 
 ```bash
-$아이디> cp [JDK 파일있는 경로] [복사할 경로]
-$아이디> cp /home/oz/jdk-8u141-linux-x64.tar.gz /apps
+cp [JDK 파일있는 경로] [복사할 경로]
+cp /home/oz/jdk-8u141-linux-x64.tar.gz /apps
 ```
 
 위와 같이 해서 `/apps`폴더에 JDK파일이 옮겨졌다면, 다음과 같이 압축을 풀고, 심볼릭 링크를 걸어주자.
 
 ```bash
-$아이디> cd /apps
-$아이디> cp ~/jdk-8u141-linux-x64.tar.gz .
-$아이디> tar xvfz jdk-8u141-linux-x64.tar.gz
-$아이디> ln -s jdk1.8.0_141/ jdk
-$아이디> ls -la
+cd /apps
+cp ~/jdk-8u141-linux-x64.tar.gz .
+tar xvfz jdk-8u141-linux-x64.tar.gz
+ln -s jdk1.8.0_141/ jdk
+ls -la
 ```
 
 #### MAVEN 설치
@@ -53,10 +52,10 @@ $아이디> ls -la
 MAVEN도 마찬가지로 `/apps` 폴더에 설치하며, 심볼릭 링크도 걸어주기
 
 ```bash
-$아이디> cd /apps
-$아이디> wget http://mirror.navercorp.com/apache/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
-$아이디> tar xvfz apache-maven-3.5.0-bin.tar.gz
-$아이디> ln -s apache-maven-3.5.0 maven
+cd /apps
+wget http://mirror.navercorp.com/apache/maven/maven-3/3.5.0/binaries/apache-maven-3.5.0-bin.tar.gz
+tar xvfz apache-maven-3.5.0-bin.tar.gz
+ln -s apache-maven-3.5.0 maven
 ```
 
 
@@ -65,7 +64,7 @@ $아이디> ln -s apache-maven-3.5.0 maven
 `java` 혹은 `mvn`명령어를 등록하기 위한 환경변수를 등록한다. `vi`, `vim`, `nano` 편한걸 쓰자.
 
 ```bash
-$아이디> vi /etc/profile
+vi /etc/profile
 ```
 
 제일 하단에 이렇게 쓰자 `/apps` 폴더가 아닌 다른곳에 jdk가 깔려있다면 해당 주소를 넣어준다. maven도 마찬가지
@@ -107,9 +106,9 @@ $> mvn -version
 `&`는 백그라운드에서 실행하라는 명령. 계정이 로그아웃되어도 백그라운드에서 실행하면 계속해서 동작한다.
 
 ```bash
-$아이디> cd /apps
-$아이디> wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
-$아이디> java -jar jenkins.war &
+cd /apps
+wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+java -jar jenkins.war &
 ```
 
 #### 접속 확인
@@ -118,7 +117,7 @@ http://ip:8080와 같은 주소로 접속해서 보면 `Unlock Jenkins` 문구�
 ===빨간색===으로 나오는 부분을 복사해서 `bash`에서 붙여넣기 하면 key가 나오는데, 이 키를 통해서 Jenkins를 활성화 한다.
 
 ```bash
-$아이디> cat /home/아이디/.jenkins/secrets/initialAdminPassword
+cat /home/아이디/.jenkins/secrets/initialAdminPassword
 ```
 
 #### 설치 옵션
@@ -222,11 +221,18 @@ cd /apps/tomcat/bin
 
 ### 2-5. Tomcat 포트포워딩 (80->9090)
 
+## **주의** `root` 계정에서 실행 해야 한다!
+
 [포트포워딩 참고](https://blog.outsider.ne.kr/580)
+
 > 1024 이하로 동작하는 어플리케이션을 실행하기 위해서는 root권한이 필요하다. 
+>
 > tomcat을 일반 사용자 계정으로 실행하기 위하여 9090포트로 설정하였다. 
+>
 > 그런데 http://ip 로 웹 어플리케이션이 호출되기 위해서는 80포트로 동작해야한다. 
+>
 > 이런 문제를 해결하기 위해서 root사용자로 포트포워딩 설정을 한다. 80으로 오는 요청을 9090으로 전달하는 것이다.
+
 
 ```bash
 iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
