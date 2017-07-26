@@ -3,7 +3,7 @@
 ToC
 =================
   * 1.Root 계정
-      * [1-1. 일반 계정 생성](###Root 계정으로 일반 계정 생성)
+      * [1-1. 일반 계정 생성](#createuser)
       * [1-2. 일반 계정이 접근할 수 있는 디렉토리 생성 및 권한 주기(tomcat, jenkins등 설치 폴더)](#screenshot)
       * [1-3. JDK & Maven설치 및 환경설정](#installation)
       * [1-4. 포트포워딩(80에서 tomcat운영 포트)](#or-using-pathogen)
@@ -15,7 +15,7 @@ ToC
   
 
 
-### 1-1. Root 계정으로 일반 계정 생성
+### 1-1. [Root 계정으로 일반 계정 생성](#createuser)
 
 ```bash
 $> adduser 아이디
