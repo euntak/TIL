@@ -1,6 +1,6 @@
 # Jenkins를 이용한 빌드 자동화 및 배포
 
-[TOC]
+
 =================
   * 1.Root 계정
       * [1-1. 일반 계정 생성](#createuser)
@@ -13,7 +13,9 @@
       * [1-3. tomcat 설치 및 실행](#installation)
       * [1-4. Jenkins 설정](#or-using-pathogen)
   
+[TOC]
 
+## 1.Root 계정
 
 ### 1-1. [Root 계정으로 일반 계정 생성](#createuser)
 
