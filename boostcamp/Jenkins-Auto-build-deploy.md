@@ -1,28 +1,19 @@
 # Jenkins를 이용한 빌드 자동화 및 배포
 
-Table of Contents
+ToC
 =================
+  * 1.Root 계정
+      * [1-1. 일반 계정 생성](#dockerfilevim)
+      * [1-2. 일반 계정이 접근할 수 있는 디렉토리 생성 및 권한 주기(tomcat, jenkins등 설치 폴더)](#screenshot)
+      * [1-3. JDK & Maven설치 및 환경설정](#installation)
+      * [1-4. 포트포워딩(80에서 tomcat운영 포트)](#or-using-pathogen)
+  * 2.일반 계정
+      * [1-1. Jenkins 설치 및 실행](#dockerfilevim)
+      * [1-2. mysql에 사용자 계정 생성 및 데이터 베이스 생성](#screenshot)
+      * [1-3. tomcat 설치 및 실행](#installation)
+      * [1-4. Jenkins 설정](#or-using-pathogen)
+  
 
-  * [Dockerfile.vim](#dockerfilevim)
-  * [Screenshot](#screenshot)
-  * [Installation](#installation)
-        * [OR using Pathogen:](#or-using-pathogen)
-        * [OR using Vundle:](#or-using-vundle)
-  * [License](#license)
-
-## 1.Root 계정
-
-### 1-1. 일반 계정 생성
-### 1-2. 일반 계정이 접근할 수 있는 디렉토리 생성 및 권한 주기(tomcat, jenkins등 설치 폴더)
-### 1-3. JDK & Maven설치 및 환경설정
-### 1-4. 포트포워딩(80에서 tomcat운영 포트)
-
-## 2.일반 계정
-
-### 2-1. Jenkins 설치 및 실행
-### 2-2. mysql에 사용자 계정 생성 및 데이터 베이스 생성
-### 2-3. tomcat 설치 및 실행
-### 2-4. Jenkins 설정
 
 ### 1-1. Root 계정으로 일반 계정 생성
 
