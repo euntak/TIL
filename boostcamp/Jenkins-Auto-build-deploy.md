@@ -86,19 +86,19 @@ export PATH=$PATH:$M2_HOME/bin
 입력하고, 저장했으면 수정 된 내용을 저장하기 위해 아래와 같은 명령을 수행 또는 재접속을 한다.
 
 ```bash
-$> source /etc/profile
+source /etc/profile
 ```
 
 #### 확인
 
 ```bash
-$> java -version
+java -version
 
-$> echo $JAVA_HOME
-$> echo $PATH
-$> echo $CLASSPATH
+echo $JAVA_HOME
+echo $PATH
+echo $CLASSPATH
 
-$> mvn -version
+mvn -version
 ```
 
 ### 2-2. Jenkins 설치 
@@ -135,7 +135,7 @@ Customize Jenkins 화면에서 `Install Suggested plugins` 클릭~ 유용한 플
 `|`은 파이프다. `grep`은 입력 받은 내용중 특정 문자열이 포함된 것을 찾는 역할을 한다.
 
 ```bash
-$> ps -lef | grep jenkins
+ps -lef | grep jenkins
 ```
 
 ```bash
@@ -149,7 +149,7 @@ $> ps -lef | grep jenkins
 ### 2-3. Mysql 사용자 계정 생성 및 DB 생성
 
 ```bash
-$> mysql -uroot mysql
+mysql -uroot mysql
 ```
 
 ```sql
