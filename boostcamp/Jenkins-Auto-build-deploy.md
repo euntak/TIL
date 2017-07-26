@@ -15,7 +15,7 @@ ToC
   
 
 
-### 1-1. Root 계정으로 일반 계정 생성
+### 1-1. Root 계정으로 일반 계정 생성(#dockerfilevim)
 
 ```bash
 $> adduser 아이디
