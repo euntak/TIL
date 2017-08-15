@@ -143,5 +143,3 @@ Request(data) -> HMAR -> Controller -> Model -> Response(model)
 [출처 : origoni's Blog](http://millky.com/@origoni/post/1177?language=ko_kr)
 
 [출처 : {code that works}](https://sdqali.in/blog/2016/01/29/using-custom-arguments-in-spring-mvc-controllers/)
-
-## DI (Autowired)
