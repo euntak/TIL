@@ -37,6 +37,8 @@
 
 4.  `Interceptor`는 `Spring Framework`에서 자체적으로 제공하는 기능이다. 그렇기 때문에, `Spring Bean`을 받아올 수 있다. 
 
+![spring MVC request lifeCycle](../assets/filter-interceptor.jpeg)
+
 Filter와의 `처리 시점`이 다르다.
 
 클라이언트 요청에 대한 `처리 시점`
