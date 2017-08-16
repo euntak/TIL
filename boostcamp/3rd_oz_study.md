@@ -46,8 +46,34 @@ public class Severity {
     };
 }
 
+```java
+// @Valid Annotaion을 통해서 유효성 검사를 거치게된다.
+
+@Controller
+@RequestMapping("/")
+public class FormController {
+	
+	@RequestMapping(method = RequestMethod.GET)
+	public String initForm(Model model) {
+		return "form";
+	}
+
+	@RequestMapping(method = RequestMethod.POST)
+	public String submitForm(@Valid Form form, BindingResult result) {
+		String returnVal = "successForm";
+		if(result.hasErrors()) {
+			returnVal = "form";
+		}
+		return returnVal;
+	}
+
+}
+
 // 출처: http://javafactory.tistory.com/349 [FreeLife의 저장소]
 ```
+
+
+
 
 ### groups
 
@@ -63,9 +89,25 @@ ValidationMessages.properties 파일로부터 anyframe.sample.validation.constra
 anyframe.sample.validation.constraint.Telephone.message=must match "0000-000(or 0000)-0000" (max 13)
 ```
 
-
 ### Hibernate Validator
+
+|Annotation|Description|
+|------------|-----------|
+|@NotEmpty|해당 속성의 값이 Empty인지 체크|
+|@URL|해당 속성의 값이 URL형식인지 체크|
+|@Range(min=,max=)|숫자범위 체크|
+|@Email|해당 값이 Email형식인지 체크|
+|@Length(min=,max=)|문자열 길이 min과 max 사이인지 체크|
+
+* JSR-303 Bean Validation과 같이 .properties에 해당 Error Messages를 정의하여 사용 할 수 있다. (Domain DTO에서 `message` 속성을 통해서도 설정 가능)
+
+[참고 : Hibernate validator example](https://examples.javacodegeeks.com/enterprise-java/hibernate/hibernate-validator-example/)
 
 ## 왜 중요한가 ?
 
-## 어떻게 사용하는가 ?
+보안 XSS ( 크로스 사이트 스크립트 공격 방법 )
+
+게시판에 글을 쓸때에, 스크립트 코드를 입력시킨다. 해당 사용자의 쿠키나 세션 정보를 이용해서 특정 서버로 정보를 전송한다. 이런 것을 막기 위한 유효성 체크!!! &gt;, 띄어쓰기, unicode 등등.. 원했던 의도 했던 입력 값을 입력 할 수 있게, 또 입력이 잘 했는지 검사하는 것을 습관화 해야 한다. 그러므로~ 유효성 체크를 반드시.. 해야 한다. 반드시!!! **사용자의 입력값을 믿어서는 안된다.** 어떤 값을 입력 할 때에 대한 유효성을 반드시! 거쳐야 한다.
+
+
+
