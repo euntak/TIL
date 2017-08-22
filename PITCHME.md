@@ -6,11 +6,11 @@
 
 ## Index
 
-* offscreen-images (화면에 보이지 않는 이미지 요청 케이스)
-* optimize-images (압축)
-* oversize-images (이미지가 큰데, 보이는 뷰는 작다. 이미지를 자른다)
-* speed-index (화면에서 주요 컨텐츠가 사용자가 느낄 수 있는 로드 시점)
-* text-compression (텍스트가 압축되지 않은 것 같다)
+#### * offscreen-images
+#### * optimize-images
+#### * oversize-images
+#### * speed-index
+#### * text-compression
 
 ---
 
@@ -27,10 +27,13 @@ Lighthouse는 `웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도�
 +++
 
 ## 화면에 보이지 않는 이미지 요청 케이스 (1)
+![HTTP1-HTTP2](https://github.com/euntak/TIL/blob/master/assets/http1-http2.png)
 
 +++
 
 ## 화면에 보이지 않는 이미지 요청 케이스 (2)
+
+---?image=/assets/render-tree-construction.png&size=auto
 
 ---
 
