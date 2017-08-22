@@ -20,6 +20,7 @@
 
 `웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도구`
 
+![LIGHTHOUSE](/assets/pwa-lighthouse.png)
 
 ---
 
