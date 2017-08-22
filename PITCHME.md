@@ -6,17 +6,17 @@
 
 ## Index
 
-#### * offscreen-images
-#### * optimize-images
-#### * oversize-images
-#### * speed-index
-#### * text-compression
+#### offscreen-images
+#### optimize-images
+#### oversize-images
+#### speed-index
+#### text-compression
 
 ---
 
-## 성능 측정도구 
+### 성능 측정도구 
 ### LIGHT HOUSE
-[https://developers.google.com/web/tools/lighthouse/?hl=ko](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
+[https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
 Lighthouse는 `웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도구`
 
@@ -27,7 +27,7 @@ Lighthouse는 `웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도�
 +++
 
 ### 화면에 보이지 않는 이미지 요청 케이스 (1)
-![HTTP1-HTTP2](/assets/http1-http2.png)
+![HTTP1-HTTP2](/assets/http1-http2.png&size=cover)
 
 +++
 
