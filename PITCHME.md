@@ -18,7 +18,8 @@
 ### LIGHT HOUSE
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
-Lighthouse는 `웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도구`
+`웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도구`
+
 
 ---
 
@@ -27,7 +28,11 @@ Lighthouse는 `웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도�
 +++
 
 ### 화면에 보이지 않는 이미지 요청 케이스 (1)
-![HTTP1-HTTP2](/assets/http1-http2.png&size=cover)
+![HTTP1-HTTP2](/assets/http1-http2.png)
+
+Note:
+Remember to explain why it's for everyone: no sign-up, nothing to install.
+Just MD. Then git-commit.
 
 +++
 
