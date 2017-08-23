@@ -119,18 +119,41 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ---
 
-## offscreen-images
+## OFFSCREEN-IMAGES
 
-![LIGHTHOUSE](/assets/pwa-lighthouse.png)
+초기 요청시 **스크롤 없이 볼 수있는 부분의 이미지만 다운로드**하도록 페이지를 리팩토링해야한다!
 
 +++
 
-### 화면에 보이지 않는 이미지 요청 케이스
-![HTTP1-HTTP2](/assets/http1-http2.png)
+### 이미지 동적 로딩
 
-Note:
-Remember to explain why it's for everyone: no sign-up, nothing to install.
-Just MD. Then git-commit.
+**IntersectionObserver**의 활용
+
+```js
+function _productRendering(type, data) {
+    var leftSection = '';
+    var rightSection = '';
+    var totalCount = data.totalCount;
+    var products = data.products;
+
+    var $leftSection = $productContainer.find('.left');
+    var $rightSection = $productContainer.find('.right');
+
+    for (var i = 0, l = products.length; i < l; i++) {
+        if (i % 2) {
+            rightSection += productTempl(products[i]);
+        } else {
+            leftSection += productTempl(products[i]);
+        }
+    }
+
+    $leftSection[type](leftSection);
+    $rightSection[type](rightSection);
+
+    _changeProductsCount(totalCount);
+
+}
+```
 
 +++
 
