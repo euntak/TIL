@@ -40,7 +40,15 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### 우리가 만든 사이트는 ?
 
-[mainPage](assets/main-page-performance.png?size=cover)
+[mainPage](/assets/main-page-performance.png?size=cover)
+
+### 성능 개선을 해보자 !
+
+* 어떤 걸 줄일까 ?
+* 용량은 어떻게 줄일수 있을까 ?
+* 이미지는 어떻게 lazy-loading을 해야 할까?
+
+... 할게 너무 많다! 
 
 ---?image=assets/pwa-lighthouse.png&size=cover
 
