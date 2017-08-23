@@ -7,11 +7,13 @@
 ## Index
 
 #### Why ?
+#### LIGHTHOUSE
+#### Text-compression
 #### Offscreen-images
 #### Optimize-images
 #### Oversize-images
 #### Speed-index
-#### Text-compression
+
 
 ---
 
@@ -80,7 +82,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 +++
 
-### 문제1. 초기 메인페이지의 로딩이 느리다 !
+### 1. 초기 메인페이지의 로딩이 느리다 !
 
 어떻게 개선을 할 것인가 ?  
 
@@ -91,6 +93,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 ```
 
 @[2-3]
+@[](Front-End Performance 향상 === 최소비용 최대효율!)
 
 +++
 
