@@ -19,32 +19,41 @@
 
 ### Why ?
 
-|Company|성능과 수익과의 관계|
+열심히 팀 과제를 수행하던중.. 
+
+@[](이거 메인페이지 왜이렇게 느려졌냐 ?)
+@[](메인 페이지가 로딩되는게 눈에 보여 !)
+@[](이거 좀 버벅거리는 것 같지 않냐 ?)
+@[](하.....)
+
+<!-- |Company|성능과 수익과의 관계|
 |-------|---------------|
 |Bing|페이지가 2초 느려지면 유저당 수익이 4.3% 감소|
 |Google|400ms만 느려져도 유저당 검색률이 0.59% 감소|
-|Yahoo|400ms만 느려져도 full-page traffic이 5~9% 감소|
+|Yahoo|400ms만 느려져도 full-page traffic이 5~9% 감소| -->
 
 <!-- Note:
 Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능저하가 비즈니스에 얼마나 영향을 끼치는지에 대한 조사에 따르면, Web Performance는 웹 서비스 업체의 `수익과 직결`되기 때문에 성능을 최적화하여 속도를 개선하는 것이 굉장히 중요하다. -->
 
 +++
 
-### 웹 성능을 결정하는 3가지 영역
+### 왜 느려지는 걸까 ?
 
 * Back-End
 * Network
 * Front-End
 
-> Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다"
+> Steve souders : "서비스 응답 시간의 80~90%는 Front-End에서 소모된다"
 
-+++
+@[](Front-End Performance 향상 = 최소비용 최대효율!)
 
-### 우리가 만든 사이트는 ?
 
-![mainPage](/assets/main-page-performance.png)
++++image=https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/aa6a6044179489a69b5902ba6a5212f4fegg.jpg
 
-+++ 
+### 뭐 부터 개선 할 수 있을까 ?
+
+
+<!-- +++ 
 
 ### 성능 개선을 해보자 !
 
@@ -53,9 +62,11 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 * 이미지는 얼마나 압축을 해야하는거지 ?
 * 최소 비용 최대 효율을 위해 할 수 있는건 뭐가 있을까 ?
 
-무엇 부터 해야하는지 모르는 나란놈..
+무엇 부터 해야하는지 모르는 나란놈.. -->
 
 ---?image=/assets/pwa-lighthouse.png&size=contain
+
+<!-- Note: LIGHTHOUSE는 웹페이지를 분석하여 지표를 만들어 주는데요, 저희 팀은 여기서 Performance와 Best practice를 중점으로 페이지를 개선했습니다. -->
 
 <!-- <h2 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h2> -->
 <!-- <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3> -->
@@ -68,13 +79,13 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 +++?image=/assets/light-house-exam.png&size=contain
 
 
-+++
+<!-- +++
 
 ### Google Developer Tools Performance
 
-애플리케이션에서 작업이 실행될 때 모든 작업을 기록하고 분석할 수 있다!
+애플리케이션에서 작업이 실행될 때 모든 작업을 기록하고 분석할 수 있다! -->
 
-+++?image=/assets/main-page-performance.png&size=contain
+<!-- +++?image=/assets/main-page-performance.png&size=contain -->
 
 ---?image=/assets/webpack.png&size=contain
 
@@ -82,12 +93,10 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 +++
 
-### 1. 초기 메인페이지의 로딩이 느리다 !
-
-어떻게 개선을 할 것인가 ?  
+### 첫번째 개선
 
 ```
-서버사이드 렌더링 ?
+서버사이드 렌더링 적용
 서버와의 요청 횟수를 줄이자
 페이지에서 사용하는 리소스들의 크기를 줄이자
 안보이는 리소스들을 미리 불러오지 말자
@@ -95,6 +104,8 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 @[2-3]
 @[](Front-End Performance 향상 = 최소비용 최대효율!)
+
+<!-- Note: FE 개선을 방향으로 잡았기에 서버사이드 렌더링을 제외하고,  -->
 
 +++
 
@@ -114,7 +125,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ![main-after-network](/assets/main-after-network.png)
 
-<p>리소스 크기 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 64% 감소</span>, 시간 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 92%</span> 감소!</p>
+<p>리소스 크기 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 64% 감소</span>, 시간 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 92%</span> 절약!</p>
 
 @[](외쳐 갓팩!)
 
@@ -134,6 +145,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 @[4]
 @[](화면에 보여지지 않는 이미지들을 미리 요청하지 않는다!)
+@[](초기 메인페이지의 로딩이 빨라진다!)
 
 +++
 
@@ -172,7 +184,7 @@ function _settingIntersectionObserver() {
 }
 ```
 
-@[3](InterectionObserver 설정)
+@[3](IntesectionObserver 설정)
 @[10-17, 19](DOM이 노출되면 이미지 로딩)
 @[18](보여진 이미지는 Observer에서 제거)
 @[24-27](화면에 나타나는 것을 감지하기 위한 Element를 등록)
@@ -206,6 +218,7 @@ function _settingIntersectionObserver() {
 #### 이미지 동적 로딩 예시
 
 ![network-example](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/network-example.mp4)
+@[](AweSome!)
 
 ---
 
