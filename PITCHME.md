@@ -32,13 +32,9 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 * Back-End
 * Network
 * Front-End
-@[2]('> Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다."')
 
+> Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다"
 
-
-<!-- ###### 그러므로, **Front-End에서 Web Performance**를 향상 시키는 방법을 알게 된다면 `사이트의 속도 향상`에 크게 도움이 될 것이다! -->
-
-<!-- @[3]  -->
 +++
 
 ### 수익 ? 유저 ?
