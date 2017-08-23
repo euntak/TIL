@@ -12,6 +12,38 @@
 #### speed-index
 #### text-compression
 
+---
+
+## Why?
+
+Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능저하가 비즈니스에 얼마나 영향을 끼치는지에 대한 조사에 따르면, 
+
+|Company|성능과 수익과의 관계|
+|-------|---------------|
+|Bing|페이지가 2초 느려지면 유저당 수익이 4.3% 감소|
+|Google|400ms만 느려져도 유저당 검색률이 0.59% 감소|
+|Yahoo|400ms만 느려져도 full-page traffic이 5~9% 감소|
+
+Web Performance는 웹 서비스 업체의 `수익과 직결`되기 때문에 성능을 최적화하여 속도를 개선하는 것이 굉장히 중요하다.
+
++++
+
+## 웹 성능을 결정하는 3가지 영역
+
+* Back-End
+* Network
+* Front-End (UI, interaction)
+
+> Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다."
+
+그러므로, Front-End에서 Web Performance를 향상 시키는 방법을 알게 된다면 사이트의 속도 향상에 크게 도움이 될 것이다!
+
++++
+
+### 수익 & 유저 ?
+
+없지만 그래도 해보자! 나중엔.. 생기겠지..
+
 ---?image=assets/pwa-lighthouse.png&size=contain
 
 <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h3>
