@@ -87,12 +87,15 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 어떻게 개선을 할 것인가 ?  
 
 ```
+
 서버사이드 렌더링 ?
 서버와의 요청 횟수를 줄이자
 페이지에서 사용하는 리소스들의 크기를 줄이자
+안보이는 리소스들을 미리 불러오지 말자
+
 ```
 
-@[2-3]
+@[3-4]
 @[](Front-End Performance 향상 === 최소비용 최대효율!)
 
 +++
@@ -121,7 +124,20 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ## OFFSCREEN-IMAGES
 
-초기 요청시 **스크롤 없이 볼 수있는 부분의 이미지만 다운로드**하도록 페이지를 리팩토링해야한다!
++++
+
+
+```
+
+서버사이드 렌더링 ?
+서버와의 요청 횟수를 줄이자
+페이지에서 사용하는 리소스들의 크기를 줄이자
+안보이는 리소스들을 미리 불러오지 말자
+
+```
+
+@[5]
+@[](화면에 보여지지 않는 이미지들을 미리 요청하지 않는다!)
 
 +++
 
@@ -130,36 +146,48 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 **IntersectionObserver**의 활용
 
 ```js
-function _productRendering(type, data) {
-    var leftSection = '';
-    var rightSection = '';
-    var totalCount = data.totalCount;
-    var products = data.products;
+function _settingIntersectionObserver() {
 
-    var $leftSection = $productContainer.find('.left');
-    var $rightSection = $productContainer.find('.right');
+    var interectionObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) {
+                return;
+            }
 
-    for (var i = 0, l = products.length; i < l; i++) {
-        if (i % 2) {
-            rightSection += productTempl(products[i]);
-        } else {
-            leftSection += productTempl(products[i]);
-        }
-    }
+            var target = entry.target;
+            var $lazyImg = $(target).find('img');
 
-    $leftSection[type](leftSection);
-    $rightSection[type](rightSection);
+            if ( $lazyImg.data('lazy-img') ){
+                var source = $lazyImg.data('lazy-img');
+                $lazyImg.attr('src', source);
+                $lazyImg.removeAttr('data-lazy-img');
 
-    _changeProductsCount(totalCount);
+                observer.unobserve(target);
+            }
 
+        });
+    });
+
+    Array.from($productContainer.find('li.item')).forEach(function (el) {
+        interectionObserver.observe(el);
+    });
 }
 ```
 
+@[3-21](InterectionObserver 설정)
+@[12-15, 18](lazy-img로 지정된 이미지를을 화면에 보이면 src속성으로 변경하여 보여줌)
+@[17](보여진 이미지는 Observer에서 제거)
+@[23-25](DOM이 화면에 나타나는 것을 감지하기 위한 Element를 등록)
+
 +++
 
-### 화면에 보이지 않는 이미지 요청 케이스 (2)
+### 예상치 못한 결과
 
-+++?image=/assets/render-tree-construction.png&size=50% 50%
+실제로 메인페이지에서의 이미지 사이즈가 각기 다르다!
+
+우리에게 필요한건... 스피드! 빠른 테스트의 수행을 위해서..
+
+> 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행했습니다.
 
 ---
 
