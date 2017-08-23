@@ -199,9 +199,11 @@ function _settingIntersectionObserver() {
 
 ![main-after-network](/assets/main-after-network.png)
 
-+++?video=https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/network-example.mp4
++++
 
-### 스크롤시 Network 탭의 변화를 봐주세요!
+#### 이미지 동적 로딩 예시
+
+![network-example](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/network-example.mp4)
 
 ---
 
