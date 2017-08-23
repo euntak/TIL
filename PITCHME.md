@@ -110,7 +110,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ![main-after-network](/assets/main-after-network.png)
 
-리소스 크기 <p style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 64% 감소</p>, 시간 <p style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 92%</p> 감소!
+<p>리소스 크기 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 64% 감소</span>, 시간 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 92%</span> 감소!</p>
 
 @[](외쳐 갓팩!)
 
