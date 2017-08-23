@@ -46,22 +46,23 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### 성능 개선을 해보자 !
 
-* 어떤 걸 줄일까 ?
+* 근데 어떤 것을 개선해야 하지 ?
 * 용량은 어떻게 줄일수 있을까 ?
 * 이미지는 어떻게 lazy-loading을 해야 할까?
+* 최소 비용 최대 효율 !
 
-... 할게 너무 많다! 
+막막 ... 할게 너무 많다!
 
----?image=assets/pwa-lighthouse.png&size=cover
+---?image=assets/pwa-lighthouse.png&size=contain
 
-<h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h3>
+<h2 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h2>
 <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3>
 
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
 웹 앱의 품질을 개선하는 오픈 소스 자동화 도구
 
-+++?image=assets/light-house-exam.png&size=cover
++++?image=assets/light-house-exam.png&size=contain
 
 
 +++
