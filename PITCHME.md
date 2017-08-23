@@ -6,11 +6,12 @@
 
 ## Index
 
-#### offscreen-images
-#### optimize-images
-#### oversize-images
-#### speed-index
-#### text-compression
+#### Why ?
+#### Offscreen-images
+#### Optimize-images
+#### Oversize-images
+#### Speed-index
+#### Text-compression
 
 ---
 
@@ -22,8 +23,8 @@
 |Google|400ms만 느려져도 유저당 검색률이 0.59% 감소|
 |Yahoo|400ms만 느려져도 full-page traffic이 5~9% 감소|
 
-Note:
-Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능저하가 비즈니스에 얼마나 영향을 끼치는지에 대한 조사에 따르면, Web Performance는 웹 서비스 업체의 `수익과 직결`되기 때문에 성능을 최적화하여 속도를 개선하는 것이 굉장히 중요하다.
+<!-- Note:
+Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능저하가 비즈니스에 얼마나 영향을 끼치는지에 대한 조사에 따르면, Web Performance는 웹 서비스 업체의 `수익과 직결`되기 때문에 성능을 최적화하여 속도를 개선하는 것이 굉장히 중요하다. -->
 
 +++
 
@@ -39,7 +40,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### 우리가 만든 사이트는 ?
 
-
+[mainPage](assets/main-page-performance.png?size=cover)
 
 ---?image=assets/pwa-lighthouse.png&size=cover
 
@@ -49,6 +50,9 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
 웹 앱의 품질을 개선하는 오픈 소스 자동화 도구
+
++++?image=assets/light-house-exam.png?size=cover
+
 
 +++
 
