@@ -199,9 +199,9 @@ function _settingIntersectionObserver() {
 
 ![main-after-network](/assets/main-after-network.png)
 
-### Video
++++?video=http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4
 
-![Video](https://player.vimeo.com/video/230771270)
++++?video=https://player.vimeo.com/video/230771105
 
 <p>리소스 크기 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 64% 감소</span>, 시간 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 92%</span> 감소!</p>
 
