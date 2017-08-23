@@ -82,11 +82,11 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### 문제1. 초기 메인페이지의 로딩이 느리다 !
 
-네트워크환경이 동일하다고 가정했을 때에, 어떻게 개선을 할 것인가 ?  
+어떻게 개선을 할 것인가 ?  
 
 ```
 서버사이드 렌더링 ?
-서버와의 요청 횟수를 줄이자  
+서버와의 요청 횟수를 줄이자
 페이지에서 사용하는 리소스들의 크기를 줄이자
 ```
 
@@ -108,7 +108,9 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 * 리소스 크기 : 180KB
 * 시간 : 37ms 
 
-![main-before-network](/assets/main-after-network.png)
+![main-after-network](/assets/main-after-network.png)
+
+리소스 크기 <p style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 64% 감소</p>, 시간 <p style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 92%</p> 감소!
 
 @[](외쳐 갓팩!)
 
