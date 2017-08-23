@@ -53,7 +53,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 무엇 부터 해야하는지 모르는 나란놈..
 
----?image=assets/pwa-lighthouse.png&size=contain
+---?image=/assets/pwa-lighthouse.png&size=contain
 
 <h2 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h2>
 <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3>
@@ -62,7 +62,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 웹 앱의 품질을 개선하는 오픈 소스 자동화 도구
 
-+++?image=assets/light-house-exam.png&size=contain
++++?image=/assets/light-house-exam.png&size=contain
 
 
 +++
