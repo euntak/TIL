@@ -75,19 +75,33 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ---?image=/assets/webpack.png&size=contain
 
-## text-compression
-
-+++?image=/assets/what-is-webpack.png&size=contain
-
-<blockquote>
-<p style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">Webpack은 비동기 I/O와 다중 캐시 레벨을 사용하기 때문에 컴파일 속도가 매우 빠르다!</p>
-</blockquote>
+## TEXT-COMPRESSION
 
 +++
 
-### Before VS After
+### 초기 메인페이지의 로딩이 느리다 !
 
+네트워크환경이 동일하다고 가정했을 때에, 어떻게 개선을 할 것인가 ?  
+서버와의 요청 횟수를 줄이자  
+페이지에서 사용하는 리소스들의 크기를 줄이자  
 
++++
+
+### Before
+
+리소스 크기 [JS, CSS] : 500KB 이상
+시간 : 500ms 이상
+
+![main-before-network](/assets/main-before-network.png)
+
++++
+
+### After
+
+리소스 크기 [JS, CSS] : 180KB
+시간 : 37ms 
+
+![main-before-network](/assets/main-before-network.png)
 
 ---
 
