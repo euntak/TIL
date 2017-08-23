@@ -15,6 +15,8 @@
 ---?image=assets/pwa-lighthouse.png&size=contain
 
 ### 성능 측정도구 
+<span style="font-family: Helvetica Neue; font-weight: bold; color:#000000"><span color:##e49436">Git</span>Pitch</span>!
+
 ### LIGHT HOUSE
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
@@ -26,7 +28,7 @@
 
 ## offscreen-images
 
-![LIGHTHOUSE](/assets/pwa-lighthouse.png&size=50% 50%)
+![LIGHTHOUSE](/assets/pwa-lighthouse.png)
 
 +++
 
