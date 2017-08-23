@@ -31,8 +31,8 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 * Back-End
 * Network
-@[1](* Front-End)
-@[2](> Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다.")
+* Front-End @[1]
+@[2] > Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다."
 
 
 
