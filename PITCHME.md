@@ -199,7 +199,7 @@ function _settingIntersectionObserver() {
 
 ![main-after-network](/assets/main-after-network.png)
 
-+++?video=https://player.vimeo.com/video/230771270
++++?video=https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/network-example.mp4
 
 ### 스크롤시 Network 탭의 변화를 봐주세요!
 
