@@ -14,15 +14,11 @@
 
 ---?image=assets/pwa-lighthouse.png&size=contain
 
-### 성능 측정도구 
-<span style="font-family: Helvetica Neue; font-weight: bold; color:#000000"><span color:##e49436">Git</span>Pitch</span>!
-
-### LIGHT HOUSE
+<h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h3>
+<h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3>
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
-`웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도구`
-
-
+<p style="font-family: Helvetica Neue; font-weight: bold; color:#000000">웹 앱의 품질을 개선하는 오픈 소스 자동화 도구</p>
 
 ---
 
