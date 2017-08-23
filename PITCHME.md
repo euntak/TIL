@@ -12,7 +12,7 @@
 #### speed-index
 #### text-compression
 
----?image=/assets/pwa-lighthouse.png&size=contain
+---?image=assets/pwa-lighthouse.png&size=contain
 
 ### 성능 측정도구 
 ### LIGHT HOUSE
@@ -20,11 +20,13 @@
 
 `웹 앱의 품질을 개선`하는 `오픈 소스 자동화 도구`
 
-<!-- ![LIGHTHOUSE](/assets/pwa-lighthouse.png) -->
+
 
 ---
 
 ## offscreen-images
+
+![LIGHTHOUSE](/assets/pwa-lighthouse.png&size=50% 50%)
 
 +++
 
