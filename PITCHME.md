@@ -55,8 +55,9 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ---?image=/assets/pwa-lighthouse.png&size=contain
 
-<h2 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h2>
-<h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3>
+<!-- <h2 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h2> -->
+<!-- <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3> -->
+### LIGHTHOUSE
 
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
@@ -79,18 +80,24 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 +++
 
-### 초기 메인페이지의 로딩이 느리다 !
+### 문제1. 초기 메인페이지의 로딩이 느리다 !
 
 네트워크환경이 동일하다고 가정했을 때에, 어떻게 개선을 할 것인가 ?  
+
+```
+서버사이드 렌더링 ?
 서버와의 요청 횟수를 줄이자  
-페이지에서 사용하는 리소스들의 크기를 줄이자  
+페이지에서 사용하는 리소스들의 크기를 줄이자
+```
+
+@[2-3]
 
 +++
 
 ### Before
 
-리소스 크기 [JS, CSS] : 500KB 이상
-시간 : 500ms 이상
+* 리소스 크기 : 500KB 이상
+* 시간 : 500ms 이상
 
 ![main-before-network](/assets/main-before-network.png)
 
@@ -98,10 +105,12 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### After
 
-리소스 크기 [JS, CSS] : 180KB
-시간 : 37ms 
+* 리소스 크기 : 180KB
+* 시간 : 37ms 
 
-![main-before-network](/assets/main-before-network.png)
+![main-before-network](/assets/main-after-network.png)
+
+@[](외쳐 갓팩!)
 
 ---
 
