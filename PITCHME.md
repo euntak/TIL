@@ -21,10 +21,11 @@
 
 열심히 팀 과제를 수행하던중.. 
 
-@[1](이거 메인페이지 왜이렇게 느려졌냐 ?)
-@[2](메인 페이지가 로딩되는게 눈에 보여 !)
-@[3](이거 좀 버벅거리는 것 같지 않냐 ?)
-@[4](하.....)
+@[]](이거 메인페이지 왜이렇게 느려졌냐 ?)
+@[](메인 페이지가 로딩되는게 눈에 보여 !)
+@[](이거 좀 버벅거리는 것 같지 않냐 ?)
+@[](그래도 메인페이지인데.. 좀 더 빨랐으면 좋겠어 !)
+@[](하.....)
 
 <!-- |Company|성능과 수익과의 관계|
 |-------|---------------|
@@ -45,12 +46,12 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 > Steve souders : "서비스 응답 시간의 80~90%는 Front-End에서 소모된다"
 
-@[](Front-End Performance 향상 = 최소비용 최대효율!)
+@[](Front-End 성능 향상 = 최소비용 최대효율!)
 
 
 +++
 
-### 뭐 부터 개선 할 수 있을까 ?
+### 근데 어떤걸 개선 해야하지 ?
 
 ![aa6a](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/aa6a6044179489a69b5902ba6a5212f4fegg.jpg)
 
@@ -67,18 +68,19 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ---?image=/assets/pwa-lighthouse.png&size=contain
 
-<!-- Note: LIGHTHOUSE는 웹페이지를 분석하여 지표를 만들어 주는데요, 저희 팀은 여기서 Performance와 Best practice를 중점으로 페이지를 개선했습니다. -->
-
 <!-- <h2 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h2> -->
 <!-- <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3> -->
 ### LIGHTHOUSE
 
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
-웹 앱의 품질을 개선하는 오픈 소스 자동화 도구
+웹 앱의 품질을 개선하는 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">오픈 소스 지동화 도구</span>
+
+<!-- Note: 최근 Chrome브라우저의 Developer tool Audits에 포함되었으며, 가장 최근에 구글에서 개발한 툴 입니다. 그러니 믿고 쓰셔도 될 것 같습니다. -->
 
 +++?image=/assets/light-house-exam.png&size=contain
 
+<!-- Note: 이 화면이 LIGHTHOUSE가 웹 페이지를 분석한 결과를 보여주는 페이지 입니다. 저희 팀은 LIGHTHOUSE 크롬 익스텐션을 통해서 분석을 했구요, 보시는 화면에서 Performance 와 Best Practice에 초점을 맞춰 개선을 진행 했습니다. -->
 
 <!-- +++
 
@@ -104,9 +106,9 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 ```
 
 @[2-3]
-@[](Front-End Performance 향상 = 최소비용 최대효율!)
+@[](서버사이드 렌더링은 다음 기회에.)
 
-<!-- Note: FE 개선을 방향으로 잡았기에 서버사이드 렌더링을 제외하고,  -->
+<!-- Note: FE 개선을 방향으로 잡았기에 서버사이드 렌더링을 제외하고, 나머지를 차례대로 진행 하겠습니다. -->
 
 +++
 
@@ -116,6 +118,8 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 * 시간 : 500ms 이상
 
 ![main-before-network](/assets/main-before-network.png)
+
+<!-- Note: 개선하기 이전에 요청하는 네트워크 파일요소들이 이렇게 많네요.. -->
 
 +++
 
@@ -130,23 +134,24 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 @[](외쳐 갓팩!)
 
+<!-- Note: 개선하기를 진행하고나서 리소스의 크기는 64%감소하였고, 시간은 약 90%정도 절약되었습니다. -->
+
 ---
 
 ## OFFSCREEN-IMAGES
 
 +++
 
+### 두번째 개선
 
 ```
-서버사이드 렌더링 ?
 서버와의 요청 횟수를 줄이자
 페이지에서 사용하는 리소스들의 크기를 줄이자
 안보이는 리소스들을 미리 불러오지 말자
 ```
 
-@[4]
+@[3]
 @[](화면에 보여지지 않는 이미지들을 미리 요청하지 않는다!)
-@[](초기 메인페이지의 로딩이 빨라진다!)
 
 +++
 
