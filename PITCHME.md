@@ -144,7 +144,8 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 ```js
 function _settingIntersectionObserver() {
 
-    var interectionObserver = new IntersectionObserver(function (entries, observer) {
+    var interectionObserver = new IntersectionObserver
+    (function (entries, observer) {
         entries.forEach(function (entry) {
             if (!entry.isIntersecting) {
                 return;
@@ -164,26 +165,47 @@ function _settingIntersectionObserver() {
         });
     });
 
-    Array.from($productContainer.find('li.item')).forEach(function (el) {
+    Array.from($productContainer.find('li.item'))
+    .forEach(function (el) {
         interectionObserver.observe(el);
     });
 }
 ```
 
-@[3-21](InterectionObserver 설정)
-@[12-15, 18](DOM이 노출되면 이미지 로딩)
+@[3](InterectionObserver 설정)
+@[10-17, 19](DOM이 노출되면 이미지 로딩)
 @[17](보여진 이미지는 Observer에서 제거)
-@[23-25](화면에 나타나는 것을 감지하기 위한 Element를 등록)
+@[24-27](화면에 나타나는 것을 감지하기 위한 Element를 등록)
 
 +++
 
 ### 예상치 못한 결과
 
-실제로 메인페이지에서의 이미지 사이즈가 각기 다르다!
+이미지가 채워지기 전 DOM이 기준이 되어버려서 생각보다 많은 이미지들이 불려짐
 
-> 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행했습니다.
+그래서! 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행했습니다.
 
 @[](우리에게 필요한건... 스피드!)
+
++++
+
+### Before
+
+![main-before-network](/assets/main-before-network.png)
+
++++
+
+### After
+
+![main-after-network](/assets/main-after-network.png)
+
+### Video
+
+![Video](https://player.vimeo.com/video/230771270)
+
+<p>리소스 크기 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 64% 감소</span>, 시간 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">약 92%</span> 감소!</p>
+
+@[](외쳐 갓팩!)
 
 ---
 
