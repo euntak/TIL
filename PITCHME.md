@@ -22,7 +22,7 @@
 |Google|400ms만 느려져도 유저당 검색률이 0.59% 감소|
 |Yahoo|400ms만 느려져도 full-page traffic이 5~9% 감소|
 
-Note : 
+Note:
 Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능저하가 비즈니스에 얼마나 영향을 끼치는지에 대한 조사에 따르면, Web Performance는 웹 서비스 업체의 `수익과 직결`되기 때문에 성능을 최적화하여 속도를 개선하는 것이 굉장히 중요하다.
 
 +++
@@ -33,13 +33,13 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 * Network
 * Front-End
 
-@[1]("<blockquote><p>Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다"</p></blockquote>")
+> Steve souders "서비스 응답 시간의 80~90%는 Front-End에서 소모된다"
 
 +++
 
-### 수익 ? 유저 ?
+### 우리가 만든 사이트는 ?
 
-없지만 그래도 해보자! 나중엔.. 생기겠지..
+
 
 ---?image=assets/pwa-lighthouse.png&size=contain
 
@@ -48,6 +48,13 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
 <p style="font-family: Helvetica Neue; font-weight: bold; color:#000000">웹 앱의 품질을 개선하는 오픈 소스 자동화 도구</p>
+
++++
+
+### Google Developer Tools Performance
+
+애플리케이션에서 작업이 실행될 때 모든 작업을 기록하고 분석할 수 있다!  
+애플리케이션에서 인지된 성능 문제를 조사하는 데 가장 좋은 출발점입니다.  
 
 ---
 
