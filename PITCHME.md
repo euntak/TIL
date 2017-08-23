@@ -71,6 +71,8 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 애플리케이션에서 작업이 실행될 때 모든 작업을 기록하고 분석할 수 있다!
 
++++?image=/assets/main-page-performance.png&size=contain
+
 ---
 
 ## offscreen-images
