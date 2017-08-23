@@ -174,16 +174,18 @@ function _settingIntersectionObserver() {
 
 @[3](InterectionObserver 설정)
 @[10-17, 19](DOM이 노출되면 이미지 로딩)
-@[17](보여진 이미지는 Observer에서 제거)
+@[18](보여진 이미지는 Observer에서 제거)
 @[24-27](화면에 나타나는 것을 감지하기 위한 Element를 등록)
 
 +++
 
 ### 예상치 못한 결과
 
-이미지가 채워지기 전 DOM이 기준이 되어버려서 생각보다 많은 이미지들이 불려짐
+이미지가 채워지기 전 DOM크기가 기준이 되어버림
 
-그래서! 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행했습니다.
+이로 인해서 예상보다 많은 이미지들이 불려짐 
+
+그래서! 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행함
 
 @[](우리에게 필요한건... 스피드!)
 
@@ -191,13 +193,13 @@ function _settingIntersectionObserver() {
 
 ### Before
 
-![main-before-network](/assets/main-before-network.png)
+![main-before-offscreen](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/main-offsreen-before-min.png)
 
 +++
 
 ### After
 
-![main-after-network](/assets/main-after-network.png)
+![main-after-offscreen](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/main-offsreen-after-min.png)
 
 +++
 
