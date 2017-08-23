@@ -40,7 +40,9 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### 우리가 만든 사이트는 ?
 
-[mainPage](/assets/main-page-performance.png?size=cover)
+[mainPage](/assets/main-page-performance.png)
+
++++ 
 
 ### 성능 개선을 해보자 !
 
@@ -59,7 +61,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 웹 앱의 품질을 개선하는 오픈 소스 자동화 도구
 
-+++?image=assets/light-house-exam.png?size=cover
++++?image=assets/light-house-exam.png&size=cover
 
 
 +++
