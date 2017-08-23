@@ -21,10 +21,10 @@
 
 열심히 팀 과제를 수행하던중.. 
 
-@[](이거 메인페이지 왜이렇게 느려졌냐 ?)
-@[](메인 페이지가 로딩되는게 눈에 보여 !)
-@[](이거 좀 버벅거리는 것 같지 않냐 ?)
-@[](하.....)
+@[1](이거 메인페이지 왜이렇게 느려졌냐 ?)
+@[2](메인 페이지가 로딩되는게 눈에 보여 !)
+@[3](이거 좀 버벅거리는 것 같지 않냐 ?)
+@[4](하.....)
 
 <!-- |Company|성능과 수익과의 관계|
 |-------|---------------|
@@ -48,10 +48,11 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 @[](Front-End Performance 향상 = 최소비용 최대효율!)
 
 
-+++image=https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/aa6a6044179489a69b5902ba6a5212f4fegg.jpg
++++
 
 ### 뭐 부터 개선 할 수 있을까 ?
 
+![aa6a](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/aa6a6044179489a69b5902ba6a5212f4fegg.jpg)
 
 <!-- +++ 
 
