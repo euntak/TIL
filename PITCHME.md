@@ -41,20 +41,20 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 
 
----?image=assets/pwa-lighthouse.png&size=contain
+---?image=assets/pwa-lighthouse.png&size=cover
 
 <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h3>
 <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3>
+
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
-<p style="font-family: Helvetica Neue; font-weight: bold; color:#000000">웹 앱의 품질을 개선하는 오픈 소스 자동화 도구</p>
+웹 앱의 품질을 개선하는 오픈 소스 자동화 도구
 
 +++
 
 ### Google Developer Tools Performance
 
-애플리케이션에서 작업이 실행될 때 모든 작업을 기록하고 분석할 수 있다!  
-애플리케이션에서 인지된 성능 문제를 조사하는 데 가장 좋은 출발점입니다.  
+애플리케이션에서 작업이 실행될 때 모든 작업을 기록하고 분석할 수 있다!
 
 ---
 
