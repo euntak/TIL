@@ -73,6 +73,20 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 +++?image=/assets/main-page-performance.png&size=contain
 
+---?image=/assets/webpack.png&size=contain
+
+## text-compression
+
++++?image=/assets/what-is-webpack.png&size=contain
+
+> Webpack은 비동기 I/O와 다중 캐시 레벨을 사용하기 때문에 컴파일 속도가 매우 빠르다!
+
++++
+
+### Before VS After
+
+
+
 ---
 
 ## offscreen-images
@@ -129,18 +143,6 @@ Just MD. Then git-commit.
 +++
 
 ### 화면에서 주요 컨텐츠가 사용자가 느낄 수 있는 로드 시점 (2)
-
----
-
-## text-compression
-
-+++
-
-### 텍스트가 압축되지 않은 것 같다 (1)
-
-+++
-
-### 텍스트가 압축되지 않은 것 같다 (2)
 
 ---
 
