@@ -40,7 +40,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### 우리가 만든 사이트는 ?
 
-[mainPage](/assets/main-page-performance.png)
+![mainPage](/assets/main-page-performance.png)
 
 +++ 
 
