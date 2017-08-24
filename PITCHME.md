@@ -55,40 +55,20 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ![aa6a](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/aa6a6044179489a69b5902ba6a5212f4fegg.jpg)
 
-<!-- +++ 
-
-### 성능 개선을 해보자 !
-
-* 근데 어떤 것을 개선해야 하지 ?
-* 용량을 줄이는건 맞는 것 같은데 얼마나 줄일 수 있지 ?
-* 이미지는 얼마나 압축을 해야하는거지 ?
-* 최소 비용 최대 효율을 위해 할 수 있는건 뭐가 있을까 ?
-
-무엇 부터 해야하는지 모르는 나란놈.. -->
-
 ---?image=/assets/pwa-lighthouse.png&size=contain
 
-<!-- <h2 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">성능 측정도구</h2> -->
-<!-- <h3 style="font-family: Helvetica Neue; font-weight: bold; color:#000000">LIGHT HOUSE</h3> -->
 ### LIGHTHOUSE
 
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
 웹 앱의 품질을 개선하는 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">오픈 소스 지동화 도구</span>
 
-<!-- Note: 최근 Chrome브라우저의 Developer tool Audits에 포함되었으며, 가장 최근에 구글에서 개발한 툴 입니다. 그러니 믿고 쓰셔도 될 것 같습니다. -->
+<!-- Note: 최근 Chrome브라우저의 Developer tool Audits에 포함되었으며, 가장 최근에 구글에서 개발한 툴 이므로 믿고 쓰셔도 될 것 같습니다. -->
 
 +++?image=/assets/light-house-exam.png&size=contain
 
 <!-- Note: 이 화면이 LIGHTHOUSE가 웹 페이지를 분석한 결과를 보여주는 페이지 입니다. 저희 팀은 LIGHTHOUSE 크롬 익스텐션을 통해서 분석을 했구요, 보시는 화면에서 Performance 와 Best Practice에 초점을 맞춰 개선을 진행 했습니다. -->
 
-<!-- +++
-
-### Google Developer Tools Performance
-
-애플리케이션에서 작업이 실행될 때 모든 작업을 기록하고 분석할 수 있다! -->
-
-<!-- +++?image=/assets/main-page-performance.png&size=contain -->
 
 ---?image=/assets/webpack.png&size=contain
 
@@ -195,6 +175,8 @@ function _settingIntersectionObserver() {
 @[18](보여진 이미지는 Observer에서 제거)
 @[24-27](화면에 나타나는 것을 감지하기 위한 Element를 등록)
 
+<!-- Note: 음.. IntersectionObserver를 쓴 이유와, 어떠한 장점이 있는지, 어떻게 동작을 하는지에 대한 이해가 좀더 필요, 질의 응답에서의 질문들을 받을 수 있기 때문에 정확하게 이해를 하고 사용해야함 IntersectionObserver를 왜 지원하게 되었는지 조사 필요, 아니면 다른 대체 방안이있는지 조사 -->
+
 +++
 
 ### 예상치 못한 결과
@@ -203,9 +185,7 @@ function _settingIntersectionObserver() {
 
 이로 인해서 예상보다 많은 이미지들이 불려짐 
 
-그래서! 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행함
-
-@[](우리에게 필요한건... 스피드!)
+@[](그래서! 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행함)
 
 +++
 
@@ -232,11 +212,8 @@ function _settingIntersectionObserver() {
 
 +++
 
-### 압축 (1)
-
-+++
-
-### 압축 (2)
+Webp와 Jpeg 성능 비교 
+... Webp 압축으로 성능개선
 
 ---
 
@@ -244,11 +221,13 @@ function _settingIntersectionObserver() {
 
 +++
 
-### 실제 이미지가 큰데, 보이는 뷰는 작은 케이스 (1)
+### 실제 이미지가 큰데, 보이는 뷰는 작은 케이스
 
 +++
 
-### 실제 이미지가 큰데, 보이는 뷰는 작은 케이스 (2)
+파일 업로드 할때에, 이미지 라이브러리를 활용하여 리사이징 진행,
+large, middle, small 등 프로젝트에 적용 할만한 사이즈로 
+리사이징 하고, Before After 비교
 
 ---
 
@@ -256,19 +235,25 @@ function _settingIntersectionObserver() {
 
 +++
 
-### 화면에서 주요 컨텐츠가 사용자가 느낄 수 있는 로드 시점 (1)
+### 사용자가 화면에서 주요 컨텐츠를 느낄 수 있는 로드 시점
 
 +++
 
-### 화면에서 주요 컨텐츠가 사용자가 느낄 수 있는 로드 시점 (2)
+어떠한 방식으로 진행을 해야하는지..
 
 ---
 
 ### 여러분의 사이트는 어떠신가요 ?
 
+Lighthouse로 개선 전과 후를 비교한 이미지 첨부,
+특히 performance 세부 탭을 강조하여 얼만큼 개선이 되었고,
+여기서 어떤걸 더 적용하면 더 개선이 되는지에 대한 설명 첨부
+
 ---
 
 ## QnA
+
+질의 응답
 
 ---
 
