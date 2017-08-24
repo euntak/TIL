@@ -60,9 +60,9 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ### LIGHTHOUSE
 
-[https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
-
 웹 앱의 품질을 개선하는 <span style="font-family: Helvetica Neue; font-weight: bold; color:#FF7600">오픈 소스 자동화 도구</span>
+
+[https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)
 
 <!-- Note: 최근 Chrome브라우저의 Developer tool Audits에 포함되었으며, 가장 최근에 구글에서 개발한 툴 이므로 믿고 쓰셔도 될 것 같습니다. -->
 
@@ -71,7 +71,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 <!-- Note: 이 화면이 LIGHTHOUSE가 웹 페이지를 분석한 결과를 보여주는 페이지 입니다. 저희 팀은 LIGHTHOUSE 크롬 익스텐션을 통해서 분석을 했구요, 보시는 화면에서 Performance 와 Best Practice에 초점을 맞춰 개선을 진행 했습니다. -->
 
 
----?image=/assets/webpack.png&size=contain
+---?image=/assets/webpack-logo.gif&size=cover
 
 ## TEXT-COMPRESSION
 
