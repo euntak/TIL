@@ -55,13 +55,14 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 
 ![aa6a](https://s3.ap-northeast-2.amazonaws.com/notes-file-uploads/aa6a6044179489a69b5902ba6a5212f4fegg.jpg)
 
----?image=/assets/pwa-lighthouse.png&size=contain
+---
+![lighthouse](/assets/pwa-lighthouse.png)
 
 ### LIGHTHOUSE
 
 [https://developers.google.com/web/tools/lighthouse](https://developers.google.com/web/tools/lighthouse/?hl=ko)  
 
-웹 앱의 품질을 개선하는 <span style="font-family: Helvetica Neue; font-weight: bold; color:#CC0000">오픈 소스 지동화 도구</span>
+웹 앱의 품질을 개선하는 <span style="font-family: Helvetica Neue; font-weight: bold; color:#FF7600">오픈 소스 자동화 도구</span>
 
 <!-- Note: 최근 Chrome브라우저의 Developer tool Audits에 포함되었으며, 가장 최근에 구글에서 개발한 툴 이므로 믿고 쓰셔도 될 것 같습니다. -->
 
@@ -88,8 +89,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 @[2-3]
 @[](서버사이드 렌더링은 다음 기회에.)
 
-<!-- Note: FE 개선을 방향으로 잡았기에 서버사이드 렌더링을 제외하고, 나머지를 차례대로 진행 하겠습니다. -->
-
+Note: FE 개선을 방향으로 잡았기에 서버사이드 렌더링을 제외하고, 나머지를 차례대로 진행 하겠습니다.
 +++
 
 ### Before
