@@ -71,7 +71,7 @@ Bing, Google, Yahoo와 같은 주요 검색 엔진에서 웹 사이트의 성능
 <!-- Note: 이 화면이 LIGHTHOUSE가 웹 페이지를 분석한 결과를 보여주는 페이지 입니다. 저희 팀은 LIGHTHOUSE 크롬 익스텐션을 통해서 분석을 했구요, 보시는 화면에서 Performance 와 Best Practice에 초점을 맞춰 개선을 진행 했습니다. -->
 
 
----?image=/assets/webpack-logo.gif&size=cover
+---?image=/assets/webpack-logo.gif&size=contain
 
 ## TEXT-COMPRESSION
 
@@ -185,7 +185,7 @@ function _settingIntersectionObserver() {
 
 이로 인해서 예상보다 많은 이미지들이 불려짐 
 
-@[](그래서! 리스트에 보여지는 모든 이미지의 최소 높이는 200정도로 가정하고 테스트를 수행함)
+@[](리스트에 보여지는 모든 이미지의 최소 높이는 200px정도로 가정하고 진행함)
 
 +++
 
